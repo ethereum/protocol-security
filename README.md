@@ -24,7 +24,7 @@ We also keep a public repository of [past results](https://github.com/ethereum/p
 ## Grants
 We feel that providing resources and funding to security grants is impactful and valuable to the ecosystem. In our opinion, providing funding is often critical, however we also provide our own time as a resource in order to further help projects be successful. Some of the grants we work on are:
 - Provide and support Academic Grants through [funding and resources](https://blog.ethereum.org/2023/06/28/academic-grants-round-23)
-- We are an active supporte of the [Ethereum Protocol Fellowship](https://github.com/eth-protocol-fellows/cohort-five/blob/main/projects/project-ideas.md#protocol-security) by providing resources
+- We are an active supporter of the [Ethereum Protocol Fellowship](https://github.com/eth-protocol-fellows/cohort-five/blob/main/projects/project-ideas.md#protocol-security) by providing resources
 - We provide resources for the [Devcon(nect) Scholars](https://blog.ethereum.org/2023/06/26/devconnect-instanbul-scholars)
 - We provide funding and resources for General Security Grants
     - Grants for various security efforts, such as [The Red Guild](https://blog.theredguild.org/about/), [Security Alliance](https://securityalliance.org/), or fuzzers created by external people such as [Guido Vranken](https://guidovranken.com/)
