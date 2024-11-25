@@ -1,5 +1,5 @@
 # Protocol Security Research Team
-<img width="277" alt="logo" src="https://github.com/user-attachments/assets/ff81a5b7-36fd-4bf5-9828-b2e8a7a7e792">
+<img width="64" alt="logo" src="https://github.com/user-attachments/assets/ff81a5b7-36fd-4bf5-9828-b2e8a7a7e792">
 
 The Protocol Security Research team is one piece of the large puzzle that helps safeguard Ethereum’s integrity. It is a public good team funded by the Ethereum Foundation with ~10 people who each possess different areas of expertise and experience. Through coordination, meticulous code reviews, developing and utilizing advanced tooling, and running real-world simulations, our focus is on securing the network and its critical components. Our hands-on approach includes managing the bug bounty program, continuously monitoring the network, and collaborating with client teams and many other teams in the ecosystem. We’re committed to help identifying and mitigating risks to Ethereum network. The Protocol Security Research team is often not the most visible team in public, both due to the nature of what we work on, but also as we primarily try to help empower people in the ecosystem.
 
