@@ -1,24 +1,25 @@
 # Protocol Security Research Team
 <img width="64" alt="logo" src="https://github.com/user-attachments/assets/ff81a5b7-36fd-4bf5-9828-b2e8a7a7e792">
 
-The Protocol Security Research team is one piece of the large puzzle that helps safeguard Ethereum’s integrity. It is a public good team funded by the Ethereum Foundation with ~10 people who each possess different areas of expertise and experience. Through coordination, meticulous code reviews, developing and utilizing advanced tooling, and running real-world simulations, our focus is on securing the network and its critical components. Our hands-on approach includes managing the bug bounty program, continuously monitoring the network, and collaborating with client teams and many other teams in the ecosystem. We’re committed to help identifying and mitigating risks to Ethereum network. The Protocol Security Research team is often not the most visible team in public, both due to the nature of what we work on, but also as we primarily try to help empower people in the ecosystem.
+The Protocol Security Research team is one piece of the large puzzle that helps safeguard Ethereum’s integrity. It is a public good team funded by the Ethereum Foundation with ~10 people who each possess different areas of expertise and experience. Through coordination, meticulous code reviews, developing and utilizing advanced tooling, and running real-world simulations, our focus is on securing the network and its critical components. Our hands-on approach includes managing the bug bounty program, continuously monitoring the network, and collaborating with client teams and many other teams in the ecosystem. We’re committed to identifying and mitigating risks to Ethereum network. The Protocol Security Research team is often not the most visible team in public, both due to the nature of what we work on, but also as we primarily try to help empower people in the ecosystem.
 
 
 ## Coordination & Collaboration
-We spend time coordinating and and collaborating with many parts of the ecosystem in order to further help keep Ethereum safe. Some of the things we do are:
+We spend time coordinating and collaborating with many parts of the ecosystem in order to further help keep Ethereum safe. Some of the things we do are:
 - Vulnerability coordination and collaboration with L2s, L1s, critical dependencies and more for security issues 
 - Protocol Security call series
 - Coordination and collaboration with external security auditors for protocol related audits
 - Security coordination and collaboration with client teams and critical dependencies
-- Coordination and collaboration with researchers from the Ethereum ecosystem, Academia and Security
-- Collaboration with teams such as Devops and Testing
-- On-going collaboration and support for grantees
+- Coordination and collaboration with researchers from the Ethereum ecosystem, academia and security
+- Collaboration with teams such as EF Devops and EF Testing
+- Ongoing collaboration and support for grantees
 - Support public good projects related to security
 - Writing the "Secured" series on the [EF Blog](https://blog.ethereum.org)
+- Host security challenges such as the [Ethereum Protocol Attackathon](https://blog.ethereum.org/2024/07/08/attackathon)
 
 
-### Bug Bounty Program
-The Protocol Security Research team manage the [Ethereum Foundation Bug Bounty Program](https://bounty.ethereum.org). We receive reports, triage, provide input, pay bounty rewards and coordinate public disclosures. The bug bounty program cover the Protocol, Clients, the Solidity compiler and more.
+## Bug Bounty Program
+The Protocol Security Research team manages the [Ethereum Foundation Bug Bounty Program](https://bounty.ethereum.org). We receive reports, triage, provide input, pay bounty rewards and coordinate public disclosures. The bug bounty program covers Ethereum specifications, Ethereum clients, the Solidity compiler and more.
 
 We also keep a public repository of [past results](https://github.com/ethereum/public-disclosures/)
 
@@ -26,7 +27,7 @@ We also keep a public repository of [past results](https://github.com/ethereum/p
 ## Grants
 We feel that providing resources and funding to security grants is impactful and valuable to the ecosystem. In our opinion, providing funding is often critical, however we also provide our own time as a resource in order to further help projects be successful. Some of the grants we work on are:
 - Provide and support Academic Grants through [funding and resources](https://blog.ethereum.org/2023/06/28/academic-grants-round-23)
-- We are an active supporte of the [Ethereum Protocol Fellowship](https://github.com/eth-protocol-fellows/cohort-five/blob/main/projects/project-ideas.md#protocol-security) by providing resources
+- We support the [Ethereum Protocol Fellowship](https://github.com/eth-protocol-fellows/cohort-five/blob/main/projects/project-ideas.md#protocol-security) by providing resources
 - We provide resources for the [Devcon(nect) Scholars](https://blog.ethereum.org/2023/06/26/devconnect-instanbul-scholars)
 - We provide funding and resources for General Security Grants
     - Grants for various security efforts, such as [The Red Guild](https://blog.theredguild.org/about/), [Security Alliance](https://securityalliance.org/), or fuzzers created by external people such as [Guido Vranken](https://guidovranken.com/)
