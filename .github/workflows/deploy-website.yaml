@@ -22,9 +22,9 @@ jobs:
   deploy-to-k8s:
     if: startsWith(github.ref, 'refs/tags/')
     needs:
-      - create-docker-image
+      - docker-build
     uses: ethdevops/workflows/.github/workflows/deploy-via-argocd.yaml@main
-    inputs:
+    with:
       team: security
       project: website
     secrets:
