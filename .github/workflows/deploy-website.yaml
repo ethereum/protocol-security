@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     tags: ["*"]
-    branches: ["main"]
+    branches: ["master"]
 
 permissions:
   contents: write
