@@ -17,6 +17,7 @@ jobs:
     permissions:
       packages: write
       id-token: write
+      contents: read
     uses: ethdevops/workflows/.github/workflows/basic-docker-build.yaml@main
     secrets:
       docker_registry_user: ${{ secrets.DOCKER_REGISTRY_USER }}
