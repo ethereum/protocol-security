@@ -1,4 +1,4 @@
-import { Box, Container, Flex } from '@chakra-ui/react';
+import { Box, Container, Flex, HStack } from '@chakra-ui/react';
 import { FC } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
@@ -7,6 +7,7 @@ import EFlogo from '../../../public/images/ef-logo.svg';
 
 import { HOME_URL } from '../../constants';
 import { Nav } from '../Nav';
+import { ThemeToggle } from './ThemeToggle';
 
 export const Header: FC = () => {
   const router = useRouter();
@@ -19,7 +20,10 @@ export const Header: FC = () => {
             <Image src={EFlogo} alt='Ethereum Foundation logo' height={55} width={161} priority />
           </Box>
 
-          <Nav />
+          <HStack spacing={4}>
+            <Nav />
+            <ThemeToggle />
+          </HStack>
         </Flex>
       </Container>
     </header>
