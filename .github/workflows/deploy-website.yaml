@@ -18,10 +18,10 @@ jobs:
       packages: write
       id-token: write
       contents: read
-    uses: ethdevops/workflows/.github/workflows/basic-docker-build.yaml@main
+    uses: ethdevops/workflows/.github/workflows/basic-docker-build-cypher.yaml@main
     secrets:
-      docker_registry_user: ${{ secrets.DOCKER_REGISTRY_USER }}
-      docker_registry_password: ${{ secrets.DOCKER_REGISTRY_SECRET }}
+      cypher_client_id: ${{ secrets.CYPHER_CLIENT_ID }}
+      cypher_client_secret: ${{ secrets.CYPHER_CLIENT_SECRET }}
 
   deploy-to-k8s:
     permissions:
