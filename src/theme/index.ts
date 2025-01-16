@@ -4,7 +4,7 @@ import { breakpoints, colors, fonts } from './foundations';
 
 const config: ThemeConfig = {
   initialColorMode: 'system',
-  useSystemColorMode: true,
+  useSystemColorMode: false,
 };
 
 const overrides = {
