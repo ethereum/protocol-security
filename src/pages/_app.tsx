@@ -1,4 +1,4 @@
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
@@ -26,6 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
 
       <ChakraProvider theme={theme}>
+        <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <Layout>
           <Component {...pageProps} />
         </Layout>
