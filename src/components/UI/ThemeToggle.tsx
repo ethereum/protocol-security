@@ -10,8 +10,13 @@ export const ThemeToggle = () => {
       icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
       onClick={toggleColorMode}
       variant="ghost"
-      color="current"
-      _hover={{ bg: colorMode === 'light' ? 'gray.100' : 'whiteAlpha.200' }}
+      color="gray.500"
+      size="md"
+      transition="all 0.2s"
+      _hover={{ 
+        color: 'primary',
+        bg: 'hover'
+      }}
     />
   );
 };

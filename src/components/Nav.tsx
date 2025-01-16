@@ -39,9 +39,14 @@ export const Nav: FC = () => {
               <NextLink href={href} passHref>
                 <Link
                   href={href}
-                  _hover={{ textDecoration: 'none', color: 'gray.800' }}
+                  position="relative"
                   color='gray.500'
                   mr={isLastItem(idx, NAV_LINKS.length) ? 0 : 3}
+                  _hover={{ 
+                    textDecoration: 'none',
+                    color: 'primary'
+                  }}
+                  transition="color 0.2s"
                 >
                   {text}
                 </Link>
@@ -79,7 +84,10 @@ export const Nav: FC = () => {
 
         <Drawer onClose={onClose} isOpen={isOpen} size='full'>
           <DrawerContent>
-            <DrawerBody bgGradient='linear(to-br, brand.footer.bgGradient.start 10%, brand.footer.bgGradient.end 100%)'>
+            <DrawerBody 
+              bg="background"
+              transition="background 0.2s"
+            >
               <Stack h='100%' justifyContent='center' alignItems='center'>
                 <Stack spacing={0} divider={<Divider borderColor='gray.100' opacity={1} w={80} />}>
                   {NAV_LINKS.map(({ href, text }) => (
@@ -90,7 +98,13 @@ export const Nav: FC = () => {
                         color='gray.500'
                         onClick={onClose}
                       >
-                        <Text textAlign='center' fontSize='lg' py={6}>
+                        <Text 
+                          textAlign='center' 
+                          fontSize='lg' 
+                          py={6}
+                          transition="color 0.2s"
+                          _hover={{ color: 'primary' }}
+                        >
                           {text}
                         </Text>
                       </Link>
