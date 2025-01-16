@@ -1,0 +1,33 @@
+# .github/workflows/main.yml
+name: Build and Deploy
+on:
+  push:
+    tags: ["*"]
+    branches: ["main"]
+
+permissions:
+  contents: write
+env:
+  # Use docker.io for Docker Hub if empty
+  REGISTRY: ghcr.io
+  # github.repository as <account>/<repo>
+  IMAGE_NAME: ${{ github.repository }}
+jobs:
+  docker-build:
+    uses: ethdevops/workflows/.github/workflows/basic-docker-build.yaml@main
+    secrets:
+      docker_registry_user: ${{ secrets.DOCKER_REGISTRY_USER }}
+      docker_registry_password: ${{ secrets.DOCKER_REGISTRY_SECRET }}
+
+  deploy-to-k8s:
+    if: startsWith(github.ref, 'refs/tags/')
+    needs:
+      - create-docker-image
+    uses: ethdevops/workflows/.github/workflows/deploy-via-argocd.yaml@main
+    inputs:
+      team: security
+      project: website
+    secrets:
+      cypher_client_id: ${{ secrets.CYPHER_CLIENT_ID }}
+      cypher_client_secret: ${{ secrets.CYPHER_CLIENT_SECRET }}
+
