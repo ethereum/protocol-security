@@ -11,7 +11,7 @@ export const NAV_LINKS = [
   { href: HOME_URL, text: 'home' },
   { href: BLOG_URL, text: 'blog' },
   { href: TEAM_URL, text: 'team' },
-  { href: EVENTS_URL, text: 'events' },
+  // { href: EVENTS_URL, text: 'events' },
   { href: COMPETITIONS_URL, text: 'competitions' },
   { href: RESPONSIBILITIES_URL, text: 'responsibilities' }
 ];
