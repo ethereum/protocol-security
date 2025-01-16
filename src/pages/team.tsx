@@ -87,7 +87,7 @@ const Team: NextPage = () => {
               </Text>
             </Flex>
             <Text>
-              Execution layer clients, L2 zkEVM security, lending pools, and breaking things.
+              Execution layer clients, L2 zkVMs, Cosmos chains, and breaking things.
             </Text>
           </Stack>
 
