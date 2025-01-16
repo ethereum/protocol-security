@@ -14,12 +14,17 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 jobs:
   docker-build:
+    permissions:
+      packages: write
+      id-token: write
     uses: ethdevops/workflows/.github/workflows/basic-docker-build.yaml@main
     secrets:
       docker_registry_user: ${{ secrets.DOCKER_REGISTRY_USER }}
       docker_registry_password: ${{ secrets.DOCKER_REGISTRY_SECRET }}
 
   deploy-to-k8s:
+    permissions:
+      id-token: write
     if: startsWith(github.ref, 'refs/tags/')
     needs:
       - docker-build
