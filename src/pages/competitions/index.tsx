@@ -20,6 +20,17 @@ const Bounties: NextPage = () => {
 
         <Stack spacing={4}>
           <CompetitionCard
+            url={ATTACKATHON_PECTRA_URL}
+            title='Attackathon | Pectra'
+            postedBy='Ethereum Foundation and Cantina'
+            rewardsPool='$2,000,000 USD'
+            startDate='21 February 2025 12:00 UTC'
+            endDate='21 March 2025 00:00 UTC'
+          >
+            Competition targeting Pectra specific client code and specifications.
+          </CompetitionCard>
+          
+          <CompetitionCard
             url={ATTACKATHON_URL}
             title='Attackathon | Ethereum Protocol'
             postedBy='Ethereum Foundation and Immunefi'
@@ -27,7 +38,7 @@ const Bounties: NextPage = () => {
             startDate='25 November 2024 14:00 UTC'
             endDate='20 January 2025 14:00 UTC'
           >
-            Description.
+            Competition targeting the entire Ethereum Protocol.
           </CompetitionCard>
         </Stack>
       </main>
