@@ -4,6 +4,7 @@ import type { NextPage } from 'next';
 import { CompetitionCard, PageMetadata } from '../../components/UI/';
 
 import { ATTACKATHON_URL } from '../../constants';
+import { ATTACKATHON_PECTRA_URL } from '../../constants';
 
 const Bounties: NextPage = () => {
   return (
