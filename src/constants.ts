@@ -24,5 +24,5 @@ export const HEAD_TITLE_SHORT = 'EF Protocol Security';
 export const POSTS_DIR = 'src/posts';
 
 // competitions
-export const ATTACKATHON_PECTRA_URL = 'https://cantina.xyz/competitions/9ab19e33-b73c-4384-83a8-b905f508ce5e';
+export const ATTACKATHON_PECTRA_URL = 'https://cantina.xyz/competitions/pectra';
 export const ATTACKATHON_URL = 'https://immunefi.com/audit-competition/ethereum-protocol-attackathon/information/';
