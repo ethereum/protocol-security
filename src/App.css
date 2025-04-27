@@ -1,0 +1,8 @@
+
+/* Clean slate for our custom styles */
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
