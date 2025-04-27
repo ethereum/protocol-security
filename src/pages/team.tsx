@@ -21,6 +21,14 @@ const teamMembers: TeamMember[] = [
     image: '/images/tyler.jpeg',
   },
   {
+    name: 'Andrés Láinez',
+    description: 'Execution layer clients and zkVMs.',
+    github: 'https://github.com/nethoxa',
+    twitter: 'https://x.com/nethoxa',
+    website: 'https://nethoxa.github.io/',
+    image: '/images/andres.jpeg',
+  },
+  {
     name: 'Bhargava Shastry',
     description: 'Solidity compilers, fuzzing everything, and networking libraries.',
     github: 'https://github.com/bshastry',
@@ -48,14 +56,6 @@ const teamMembers: TeamMember[] = [
     twitter: 'https://x.com/JustinTraglia',
     signal: 'https://signal.me/#eu/nFqTWX1iPknqfQa93CuYl6iLjGyKylI3gTPq__SeNTkhGd3w1TBFZ5cwoRH7hFzI',
     image: '/images/justin.png',
-  },
-  {
-    name: 'Andrés Láinez',
-    description: 'Execution layer clients, L2 zkVMs, Cosmos chains, and breaking things.',
-    github: 'https://github.com/nethoxa',
-    twitter: 'https://x.com/nethoxa',
-    website: 'https://nethoxa.github.io/',
-    image: '/images/andres.jpeg',
   },
 ];
 
