@@ -5,11 +5,11 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/components/theme-provider";
 import Index from "./pages/index";
-import NotFound from "./pages/NotFound";
+import NotFound from "./pages/notFound";
 import Team from "./pages/team";
 import Responsibilities from "./pages/responsibilities";
-import Competitions from "./pages/Competitions";
-import Blog from "./pages/Blog";
+import Competitions from "./pages/competitions";
+import Blog from "./pages/blog";
 import Audits from "./pages/audits";
 const queryClient = new QueryClient();
 
