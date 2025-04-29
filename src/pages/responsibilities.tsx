@@ -1,178 +1,139 @@
-import { Box, Heading, Link, ListItem, Stack, Text, UnorderedList, VStack } from '@chakra-ui/react';
-import type { NextPage } from 'next';
+import { Navbar } from '@/components/Navbar';
+import { Footer } from '@/components/Footer';
 
-import { PageMetadata } from '../components/UI';
-
-const Responsibilities: NextPage = () => {
+export default function Responsibilities() {
+  
   return (
-    <>
-      <PageMetadata
-        title='Responsibilities'
-        description='Areas of work and responsibilities of the Protocol Security Research team'
-      />
-
-      <main>
-        <Heading as='h1' mb={10}>
-          Our Responsibilities
-        </Heading>
-
-        <VStack spacing={12} align="stretch">
-          <Box>
-            <Heading as='h2' size='lg' mb={6}>Coordination & Collaboration</Heading>
-            <Text mb={4}>
-              We spend time coordinating and collaborating with many parts of the ecosystem in order to further help keep Ethereum safe. Some of the things we do are:
-            </Text>
-            <UnorderedList spacing={2} pl={4}>
-              <ListItem>Vulnerability coordination and collaboration with L2s, L1s, critical dependencies and more for security issues</ListItem>
-              <ListItem>Protocol Security call series</ListItem>
-              <ListItem>Coordination and collaboration with external security auditors for protocol related audits</ListItem>
-              <ListItem>Security coordination and collaboration with client teams and critical dependencies</ListItem>
-              <ListItem>Coordination and collaboration with researchers from the Ethereum ecosystem, academia and security</ListItem>
-              <ListItem>Collaboration with teams such as EF Devops and EF Testing</ListItem>
-              <ListItem>Ongoing collaboration and support for grantees</ListItem>
-              <ListItem>Support public good projects related to security</ListItem>
-              <ListItem>Writing the "Secured" series on the <Link href="https://blog.ethereum.org" color="brand.lightblue" isExternal>EF Blog</Link></ListItem>
-              <ListItem>Host security challenges such as the <Link href="https://blog.ethereum.org/2024/07/08/attackathon" color="brand.lightblue" isExternal>Ethereum Protocol Attackathon</Link></ListItem>
-            </UnorderedList>
-          </Box>
-
-          <Box>
-            <Heading as='h2' size='lg' mb={6}>Bug Bounty Program</Heading>
-            <Text mb={4}>
-              The Protocol Security Research team manages the <Link href="https://bounty.ethereum.org" color="brand.lightblue" isExternal>Ethereum Foundation Bug Bounty Program</Link>. 
-              We receive reports, triage, provide input, pay bounty rewards and coordinate public disclosures. 
-              The bug bounty program covers Ethereum specifications, Ethereum clients, the Solidity compiler and more.
-            </Text>
-            <Text>
-              We also keep a public repository of <Link href="https://github.com/ethereum/public-disclosures/" color="brand.lightblue" isExternal>past results</Link>.
-            </Text>
-          </Box>
-
-          <Box>
-            <Heading as='h2' size='lg' mb={6}>Grants</Heading>
-            <Text mb={4}>
-              We feel that providing resources and funding to security grants is impactful and valuable to the ecosystem. 
-              In our opinion, providing funding is often critical, however we also provide our own time as a resource in order to further help projects be successful.
-            </Text>
-            <UnorderedList spacing={2} pl={4}>
-              <ListItem>Provide and support Academic Grants through <Link href="https://blog.ethereum.org/2023/06/28/academic-grants-round-23" color="brand.lightblue" isExternal>funding and resources</Link></ListItem>
-              <ListItem>We support the <Link href="https://github.com/eth-protocol-fellows/cohort-five/blob/main/projects/project-ideas.md#protocol-security" color="brand.lightblue" isExternal>Ethereum Protocol Fellowship</Link> by providing resources</ListItem>
-              <ListItem>We provide resources for the <Link href="https://blog.ethereum.org/2023/06/26/devconnect-instanbul-scholars" color="brand.lightblue" isExternal>Devcon(nect) Scholars</Link></ListItem>
-              <ListItem>We provide funding and resources for General Security Grants including:
-                <UnorderedList spacing={2} pl={4} mt={2}>
-                  <ListItem><Link href="https://blog.theredguild.org/about/" color="brand.lightblue" isExternal>The Red Guild</Link></ListItem>
-                  <ListItem><Link href="https://securityalliance.org/" color="brand.lightblue" isExternal>Security Alliance</Link></ListItem>
-                  <ListItem>Fuzzers created by external contributors like <Link href="https://guidovranken.com/" color="brand.lightblue" isExternal>Guido Vranken</Link></ListItem>
-                </UnorderedList>
-              </ListItem>
-            </UnorderedList>
-          </Box>
-
-          <Box>
-            <Heading as='h2' size='lg' mb={6}>Fuzzing</Heading>
-            <Text mb={4}>
-              There is a finite amount of time for manual audits, so we build, maintain and use fuzzers to increase the likelihood of finding vulnerabilities. 
-              Many severe vulnerabilities have been found by these fuzzers, and then patched by client teams before they could be found and exploited by a malicious actor.
-            </Text>
-            <Stack spacing={6}>
-              <Box>
-                <Heading as='h3' size='md' mb={3}>Execution Layer</Heading>
-                <UnorderedList spacing={2} pl={4}>
-                  <ListItem><Link href="https://github.com/holiman/goevmlab/" color="brand.lightblue" isExternal>goevmlab</Link></ListItem>
-                  <ListItem><Link href="https://github.com/MariusVanDerWijden/tx-fuzz" color="brand.lightblue" isExternal>tx-fuzz</Link></ListItem>
-                  <ListItem><Link href="https://github.com/MariusVanDerWijden/FuzzyVM" color="brand.lightblue" isExternal>FuzzyVM</Link></ListItem>
-                  <ListItem><Link href="https://github.com/MariusVanDerWijden/merge-fuzz" color="brand.lightblue" isExternal>merge-fuzz</Link></ListItem>
-                  <ListItem><Link href="https://github.com/infosecual/nosy" color="brand.lightblue" isExternal>Nosy</Link></ListItem>
-                  <ListItem>Various cryptography & EVM fuzzers</ListItem>
-                  <ListItem>Private fuzzers</ListItem>
-                </UnorderedList>
-              </Box>
-              <Box>
-                <Heading as='h3' size='md' mb={3}>Consensus Layer</Heading>
-                <UnorderedList spacing={2} pl={4}>
-                  <ListItem><Link href="https://github.com/infosecual/nosy" color="brand.lightblue" isExternal>Nosy</Link></ListItem>
-                  <ListItem>Private fuzzers</ListItem>
-                </UnorderedList>
-              </Box>
-              <Box>
-                <Heading as='h3' size='md' mb={3}>Full Stack</Heading>
-                <UnorderedList spacing={2} pl={4}>
-                  <ListItem><Link href="https://github.com/crytic/attacknet" color="brand.lightblue" isExternal>Attacknet</Link> (built from grant)</ListItem>
-                  <ListItem>Antithesis (service provider)</ListItem>
-                </UnorderedList>
-              </Box>
-              <Box>
-                <Heading as='h3' size='md' mb={3}>Cryptographic Libraries</Heading>
-                <UnorderedList spacing={2} pl={4}>
-                  <ListItem><Link href="https://github.com/jtraglia/kzg-fuzz" color="brand.lightblue" isExternal>kzgfuzz</Link></ListItem>
-                  <ListItem><Link href="https://github.com/ethereum/c-kzg-4844/tree/main/fuzz" color="brand.lightblue" isExternal>kzg differential fuzzer</Link></ListItem>
-                </UnorderedList>
-              </Box>
-            </Stack>
-          </Box>
-
-          <Box>
-            <Heading as='h2' size='lg' mb={6}>Manual Reviews</Heading>
-            <Text mb={4}>
-              We spend a lot of time manually reviewing specifications, clients and critical dependencies. 
-              Upcoming changes for hardforks are always being continually reviewed and prioritized.
-            </Text>
-            <Stack spacing={6}>
-              <Box>
-                <Heading as='h3' size='md' mb={3}>Specifications</Heading>
-                <UnorderedList spacing={2} pl={4}>
-                  <ListItem><Link href="https://github.com/ethereum/execution-specs" color="brand.lightblue" isExternal>Execution Layer</Link></ListItem>
-                  <ListItem><Link href="https://github.com/ethereum/consensus-specs" color="brand.lightblue" isExternal>Consensus Layer</Link></ListItem>
-                </UnorderedList>
-              </Box>
-              <Box>
-                <Heading as='h3' size='md' mb={3}>Clients</Heading>
-                <UnorderedList spacing={2} pl={4}>
-                  <ListItem><Link href="https://github.com/hyperledger/besu/" color="brand.lightblue" isExternal>Besu</Link></ListItem>
-                  <ListItem><Link href="https://github.com/ledgerwatch/erigon" color="brand.lightblue" isExternal>Erigon</Link></ListItem>
-                  <ListItem><Link href="https://github.com/ethereum/go-ethereum/" color="brand.lightblue" isExternal>Geth</Link></ListItem>
-                  <ListItem><Link href="https://github.com/sigp/lighthouse/" color="brand.lightblue" isExternal>Lighthouse</Link></ListItem>
-                  <ListItem><Link href="https://github.com/ChainSafe/lodestar/" color="brand.lightblue" isExternal>Lodestar</Link></ListItem>
-                  <ListItem><Link href="https://github.com/status-im/nimbus-eth2" color="brand.lightblue" isExternal>Nimbus</Link></ListItem>
-                  <ListItem><Link href="https://github.com/NethermindEth/nethermind/" color="brand.lightblue" isExternal>Nethermind</Link></ListItem>
-                  <ListItem><Link href="https://github.com/prysmaticlabs/prysm/" color="brand.lightblue" isExternal>Prysm</Link></ListItem>
-                  <ListItem><Link href="https://github.com/Consensys/teku" color="brand.lightblue" isExternal>Teku</Link></ListItem>
-                  <ListItem><Link href="https://github.com/paradigmxyz/reth/" color="brand.lightblue" isExternal>Reth</Link></ListItem>
-                  <ListItem><Link href="https://github.com/grandinetech/grandine" color="brand.lightblue" isExternal>Grandine</Link></ListItem>
-                </UnorderedList>
-              </Box>
-              <Box>
-                <Heading as='h3' size='md' mb={3}>Network Libraries</Heading>
-                <UnorderedList spacing={2} pl={4}>
-                  <ListItem><Link href="https://github.com/ethereum/devp2p/" color="brand.lightblue" isExternal>devp2p</Link></ListItem>
-                  <ListItem><Link href="https://github.com/libp2p" color="brand.lightblue" isExternal>libp2p</Link></ListItem>
-                </UnorderedList>
-              </Box>
-            </Stack>
-          </Box>
-
-          <Box>
-            <Heading as='h2' size='lg' mb={6}>Research</Heading>
-            <Text mb={4}>
-              Many hours are spent on security research related to the Ethereum ecosystem. As some of this research could potentially pose a threat, 
-              the specific research results may often not end up as public research, but the outcome of the research is rather used to help further 
-              secure the Ethereum ecosystem through improvements.
-            </Text>
-            <Text>Some examples of research topics include:</Text>
-            <UnorderedList spacing={2} pl={4} mt={2}>
-              <ListItem>Client Diversity</ListItem>
-              <ListItem>/dev/random Diversity</ListItem>
-              <ListItem>ZK security research</ListItem>
-              <ListItem>Threat Analysis</ListItem>
-              <ListItem>Risk Assessments</ListItem>
-              <ListItem>L2s</ListItem>
-              <ListItem>Cryptography</ListItem>
-            </UnorderedList>
-          </Box>
-        </VStack>
-      </main>
-    </>
+    <div className="min-h-screen flex flex-col bg-background">
+      <Navbar />
+      <div className="flex-1 pt-24 pb-16">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            
+            <section className="mb-12">
+              <h2 className="text-2xl font-semibold mb-4">Coordination & Collaboration</h2>
+              <p className="mb-4 text-muted-foreground">We spend time coordinating and collaborating with many parts of the ecosystem in order to further help keep Ethereum safe. Some of the things we do are:</p>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>Vulnerability coordination and collaboration with L2s, L1s, critical dependencies and more for security issues</li>
+                <li><a href="https://blog.ethereum.org/category/security" className="text-red-500 hover:text-red-700 transition-colors">Protocol Security call series</a></li>
+                <li>Coordination and collaboration with external security auditors for protocol related audits</li>
+                <li>Security coordination and collaboration with client teams and critical dependencies</li>
+                <li>Coordination and collaboration with researchers from the Ethereum ecosystem, academia and security</li>
+                <li>Collaboration with teams such as EF Devops and EF Testing</li>
+                <li>Ongoing collaboration and support for grantees</li>
+                <li>Support public good projects related to security</li>
+                <li><a href="https://blog.ethereum.org/category/security" className="text-red-500 hover:text-red-700 transition-colors">Writing the "Secured" series on the EF Blog</a></li>
+                <li><a href="https://github.com/ethereum/attackathon" className="text-red-500 hover:text-red-700 transition-colors">Host security challenges such as the Ethereum Protocol Attackathon</a></li>
+              </ul>
+            </section>
+            
+            <section className="mb-12">
+              <h2 className="text-2xl font-semibold mb-4">Bug Bounty Program</h2>
+              <p className="mb-4 text-muted-foreground">The Protocol Security Research team manages the <a href="https://ethereum.org/en/bug-bounty/" className="text-red-500 hover:text-red-700 transition-colors">Ethereum Foundation Bug Bounty Program</a>. We receive reports, triage, provide input, pay bounty rewards and coordinate public disclosures. The bug bounty program covers Ethereum specifications, Ethereum clients, the Solidity compiler and more.</p>
+              <p className="mb-4 text-muted-foreground">We also keep a <a href="https://github.com/ethereum/public-disclosures" className="text-red-500 hover:text-red-700 transition-colors">public repository of past results</a>.</p>
+            </section>
+            
+            <section className="mb-12">
+              <h2 className="text-2xl font-semibold mb-4">Grants</h2>
+              <p className="mb-4 text-muted-foreground">We feel that providing resources and funding to security grants is impactful and valuable to the ecosystem. In our opinion, providing funding is often critical, however we also provide our own time as a resource in order to further help projects be successful.</p>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>Provide and support <a href="https://esp.ethereum.foundation/" className="text-red-500 hover:text-red-700 transition-colors">Academic Grants</a> through funding and resources</li>
+                <li>We support the <a href="https://fellowship.ethereum.foundation/" className="text-red-500 hover:text-red-700 transition-colors">Ethereum Protocol Fellowship</a> by providing resources</li>
+                <li>We provide resources for the <a href="https://devcon.org/en/scholars/" className="text-red-500 hover:text-red-700 transition-colors">Devcon(nect) Scholars</a></li>
+                <li>We provide funding and resources for General Security Grants including:
+                  <ul className="list-disc pl-6 mt-2 space-y-1">
+                    <li><a href="https://theredguild.org/" className="text-red-500 hover:text-red-700 transition-colors">The Red Guild</a></li>
+                    <li><a href="https://securityalliance.org/" className="text-red-500 hover:text-red-700 transition-colors">Security Alliance</a></li>
+                    <li>Fuzzers created by external contributors like <a href="https://github.com/guidovranken" className="text-red-500 hover:text-red-700 transition-colors">Guido Vranken</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+            
+            <section className="mb-12">
+              <h2 className="text-2xl font-semibold mb-4">Fuzzing</h2>
+              <p className="mb-4 text-muted-foreground">There is a finite amount of time for manual audits, so we build, maintain and use fuzzers to increase the likelihood of finding vulnerabilities. Many severe vulnerabilities have been found by these fuzzers, and then patched by client teams before they could be found and exploited by a malicious actor.</p>
+              
+              <h3 className="text-xl font-semibold mt-6 mb-3">Execution Layer</h3>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li><a href="https://github.com/holiman/goevmlab" className="text-red-500 hover:text-red-700 transition-colors">goevmlab</a></li>
+                <li><a href="https://github.com/MariusVanDerWijden/tx-fuzz" className="text-red-500 hover:text-red-700 transition-colors">tx-fuzz</a></li>
+                <li><a href="https://github.com/MariusVanDerWijden/FuzzyVM" className="text-red-500 hover:text-red-700 transition-colors">FuzzyVM</a></li>
+                <li><a href="https://github.com/MariusVanDerWijden/merge-fuzz" className="text-red-500 hover:text-red-700 transition-colors">merge-fuzz</a></li>
+                <li><a href="https://github.com/ethereum/nosy" className="text-red-500 hover:text-red-700 transition-colors">Nosy</a></li>
+                <li>Various cryptography & EVM fuzzers</li>
+                <li>Private fuzzers</li>
+              </ul>
+              
+              <h3 className="text-xl font-semibold mt-6 mb-3">Consensus Layer</h3>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li><a href="https://github.com/ethereum/nosy" className="text-red-500 hover:text-red-700 transition-colors">Nosy</a></li>
+                <li>Private fuzzers</li>
+              </ul>
+              
+              <h3 className="text-xl font-semibold mt-6 mb-3">Full Stack</h3>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li><a href="https://github.com/ethereum/attacknet" className="text-red-500 hover:text-red-700 transition-colors">Attacknet</a> (built from grant)</li>
+                <li><a href="https://www.antithesis.com/" className="text-red-500 hover:text-red-700 transition-colors">Antithesis</a> (service provider)</li>
+              </ul>
+              
+              <h3 className="text-xl font-semibold mt-6 mb-3">Cryptographic Libraries</h3>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li><a href="https://github.com/ethereum/kzgfuzz" className="text-red-500 hover:text-red-700 transition-colors">kzgfuzz</a></li>
+                <li><a href="https://github.com/ethereum/kzg-differential-fuzzer" className="text-red-500 hover:text-red-700 transition-colors">kzg differential fuzzer</a></li>
+              </ul>
+            </section>
+            
+            <section className="mb-12">
+              <h2 className="text-2xl font-semibold mb-4">Manual Reviews</h2>
+              <p className="mb-4 text-muted-foreground">We spend a lot of time manually reviewing specifications, clients and critical dependencies. Upcoming changes for hardforks are always being continually reviewed and prioritized.</p>
+              
+              <h3 className="text-xl font-semibold mt-6 mb-3">Specifications</h3>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li><a href="https://github.com/ethereum/execution-specs" className="text-red-500 hover:text-red-700 transition-colors">Execution Layer</a></li>
+                <li><a href="https://github.com/ethereum/consensus-specs" className="text-red-500 hover:text-red-700 transition-colors">Consensus Layer</a></li>
+              </ul>
+              
+              <h3 className="text-xl font-semibold mt-6 mb-3">Clients</h3>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li><a href="https://github.com/hyperledger/besu" className="text-red-500 hover:text-red-700 transition-colors">Besu</a></li>
+                <li><a href="https://github.com/ledgerwatch/erigon" className="text-red-500 hover:text-red-700 transition-colors">Erigon</a></li>
+                <li><a href="https://github.com/ethereum/go-ethereum" className="text-red-500 hover:text-red-700 transition-colors">Geth</a></li>
+                <li><a href="https://github.com/sigp/lighthouse" className="text-red-500 hover:text-red-700 transition-colors">Lighthouse</a></li>
+                <li><a href="https://github.com/ChainSafe/lodestar" className="text-red-500 hover:text-red-700 transition-colors">Lodestar</a></li>
+                <li><a href="https://github.com/status-im/nimbus-eth2" className="text-red-500 hover:text-red-700 transition-colors">Nimbus</a></li>
+                <li><a href="https://github.com/NethermindEth/nethermind" className="text-red-500 hover:text-red-700 transition-colors">Nethermind</a></li>
+                <li><a href="https://github.com/prysmaticlabs/prysm" className="text-red-500 hover:text-red-700 transition-colors">Prysm</a></li>
+                <li><a href="https://github.com/ConsenSys/teku" className="text-red-500 hover:text-red-700 transition-colors">Teku</a></li>
+                <li><a href="https://github.com/paradigmxyz/reth" className="text-red-500 hover:text-red-700 transition-colors">Reth</a></li>
+                <li><a href="https://github.com/grandinetech/grandine" className="text-red-500 hover:text-red-700 transition-colors">Grandine</a></li>
+              </ul>
+              
+              <h3 className="text-xl font-semibold mt-6 mb-3">Network Libraries</h3>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li><a href="https://github.com/ethereum/devp2p" className="text-red-500 hover:text-red-700 transition-colors">devp2p</a></li>
+                <li><a href="https://github.com/libp2p/libp2p" className="text-red-500 hover:text-red-700 transition-colors">libp2p</a></li>
+              </ul>
+            </section>
+            
+            <section className="mb-12">
+              <h2 className="text-2xl font-semibold mb-4">Research</h2>
+              <p className="mb-4 text-muted-foreground">Many hours are spent on security research related to the Ethereum ecosystem. As some of this research could potentially pose a threat, the specific research results may often not end up as public research, but the outcome of the research is rather used to help further secure the Ethereum ecosystem through improvements.</p>
+              <p className="mb-4 text-muted-foreground">Some examples of research topics include:</p>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li><a href="https://clientdiversity.org/" className="text-red-500 hover:text-red-700 transition-colors">Client Diversity</a></li>
+                <li>/dev/random Diversity</li>
+                <li>ZK security research</li>
+                <li>Threat Analysis</li>
+                <li>Risk Assessments</li>
+                <li>L2s</li>
+                <li>Cryptography</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </div>
   );
-};
-
-export default Responsibilities;
+}

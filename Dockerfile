@@ -5,16 +5,16 @@ FROM node:alpine AS builder
 WORKDIR /app
 
 # Copy package files
-COPY package.json yarn.lock ./
+COPY package.json package-lock.json* ./
 
 # Install dependencies
-RUN yarn install --frozen-lockfile
+RUN npm ci
 
 # Copy source files
 COPY . .
 
 # Build application
-RUN yarn build
+RUN npm run build
 
 # Production stage
 FROM node:alpine AS runner
@@ -25,7 +25,7 @@ WORKDIR /app
 ENV NODE_ENV production
 
 # Copy necessary files from builder
-COPY --from=builder /app/next.config.js ./
+COPY --from=builder /app/next.config.mjs ./
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
@@ -43,4 +43,4 @@ USER nextjs
 EXPOSE 3000
 
 # Start the application
-CMD ["yarn", "start"]
+CMD ["npm", "run", "preview"]
