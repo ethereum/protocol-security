@@ -17,16 +17,15 @@ COPY . .
 RUN npm run build
 
 # Production stage
-FROM nginx:alpine AS runner
+FROM python:3-alpine AS runner
 
-# Set environment to production
-ENV NODE_ENV=production
+# Copy static files from builder
+COPY --from=builder /app/dist /app
 
-# Copy static files from builder to nginx
-COPY --from=builder /app/dist /usr/share/nginx/html
+WORKDIR /app
 
 # Expose the port the app runs on
 EXPOSE 3000
 
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Start Python HTTP server
+CMD ["python", "-m", "http.server", "3000"]
