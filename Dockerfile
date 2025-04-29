@@ -26,7 +26,7 @@ ENV NODE_ENV=production
 COPY --from=builder /app/dist /usr/share/nginx/html
 
 # Expose the port the app runs on
-EXPOSE 80
+EXPOSE 3000
 
 # Start nginx
 CMD ["nginx", "-g", "daemon off;"]
