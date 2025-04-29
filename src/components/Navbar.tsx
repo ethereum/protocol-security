@@ -7,6 +7,7 @@ const links = [
   { text: 'Team', href: '/team' },
   { text: 'Responsibilities', href: '/responsibilities' },
   { text: 'Competitions', href: '/competitions' },
+  { text: 'Audits', href: '/audits' },
   { text: 'Blog', href: '/blog' },
 ];
 

@@ -1,6 +1,6 @@
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
-import { Github, Twitter, Globe } from 'lucide-react';
+import { Github, Twitter, Globe, MessageCircle } from 'lucide-react';
 
 interface TeamMember {
   name: string;
@@ -18,6 +18,7 @@ const teamMembers: TeamMember[] = [
     description: 'Ethereum testnet bootstrapper, multiaddr libraries, kurtosis, and chaos fuzzing.',
     github: 'https://github.com/0xTylerHolmes',
     twitter: 'https://x.com/0xTylerHolmes',
+    signal: 'https://signal.me/#eu/qsVdOw5jn9jVo71b5UScjn7ZqaLOv84eceT3u2_Ic5JmoEt8x35K-bSXjdnGs5zs',
     image: '/images/tyler.jpeg',
   },
   {
@@ -106,6 +107,11 @@ export default function Team() {
                         {member.website && (
                           <a href={member.website} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
                             <Globe size={18} />
+                          </a>
+                        )}
+                        {member.signal && (
+                          <a href={member.signal} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
+                            <MessageCircle size={18} />
                           </a>
                         )}
                       </div>
