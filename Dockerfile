@@ -17,30 +17,16 @@ COPY . .
 RUN npm run build
 
 # Production stage
-FROM node:alpine AS runner
-
-WORKDIR /app
+FROM nginx:alpine AS runner
 
 # Set environment to production
-ENV NODE_ENV production
+ENV NODE_ENV=production
 
-# Copy necessary files from builder
-COPY --from=builder /app/next.config.mjs ./
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./package.json
-
-# Create a non-root user
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
-RUN chown -R nextjs:nodejs /app
-
-# Switch to non-root user
-USER nextjs
+# Copy static files from builder to nginx
+COPY --from=builder /app/dist /usr/share/nginx/html
 
 # Expose the port the app runs on
-EXPOSE 3000
+EXPOSE 80
 
-# Start the application
-CMD ["npm", "run", "preview"]
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]

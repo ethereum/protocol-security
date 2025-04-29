@@ -4,10 +4,10 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/components/theme-provider";
-import Index from "./pages/Index";
+import Index from "./pages/index";
 import NotFound from "./pages/NotFound";
-import Team from "./pages/Team";
-import Responsibilities from "./pages/Responsibilities.tsx";
+import Team from "./pages/team";
+import Responsibilities from "./pages/responsibilities";
 import Competitions from "./pages/Competitions";
 import Blog from "./pages/Blog";
 
