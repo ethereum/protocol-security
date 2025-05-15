@@ -11,6 +11,7 @@ import Responsibilities from "./pages/responsibilities";
 import Competitions from "./pages/competitions";
 import Blog from "./pages/blog";
 import Audits from "./pages/audits";
+import Wishlist from "./pages/wishlist";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/competitions" element={<Competitions />} />
             <Route path="/audits" element={<Audits />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/wishlist" element={<Wishlist />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

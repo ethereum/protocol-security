@@ -9,6 +9,7 @@ const links = [
   { text: 'Competitions', href: '/competitions' },
   { text: 'Audits', href: '/audits' },
   { text: 'Blog', href: '/blog' },
+  { text: 'Wishlist', href: '/wishlist' },
 ];
 
 export function Navbar() {
