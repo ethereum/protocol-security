@@ -1,5 +1,4 @@
-# Build stage
-FROM node:alpine AS builder
+FROM node:alpine
 
 # Set working directory
 WORKDIR /app
@@ -13,19 +12,8 @@ RUN npm ci
 # Copy source files
 COPY . .
 
-# Build application
-RUN npm run build
-
-# Production stage
-FROM python:3-alpine AS runner
-
-# Copy static files from builder
-COPY --from=builder /app/dist /app
-
-WORKDIR /app
-
 # Expose the port the app runs on
 EXPOSE 3000
 
-# Start Python HTTP server
-CMD ["python", "-m", "http.server", "3000"]
+# Start npm dev server
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "3000"]
