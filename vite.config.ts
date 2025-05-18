@@ -15,6 +15,11 @@ export default defineConfig(({ mode, command }) => ({
       }
     }
   },
+  server: {
+    allowedHosts: ["localhost", "security.ethereum.org"],
+    host: "0.0.0.0",
+    port: 3000
+  },
   plugins: [react()],
   resolve: {
     alias: {
