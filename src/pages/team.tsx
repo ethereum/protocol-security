@@ -58,6 +58,13 @@ const teamMembers: TeamMember[] = [
     signal: 'https://signal.me/#eu/nFqTWX1iPknqfQa93CuYl6iLjGyKylI3gTPq__SeNTkhGd3w1TBFZ5cwoRH7hFzI',
     image: '/images/justin.png',
   },
+  {
+    name: 'Antoine James',
+    description: 'Rust security, execution layer and ZK enthusiast.',
+    github: 'https://github.com/0xMushow',
+    twitter: 'https://x.com/0xMushow',
+    image: '/images/antoine.jpeg',
+  }
 ];
 
 export default function Team() {
