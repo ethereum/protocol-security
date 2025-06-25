@@ -37,10 +37,10 @@ const teamMembers: TeamMember[] = [
     image: '/images/bhargava.png',
   },
   {
-    name: 'Fredrik Svantes',
+    name: 'Fredrik',
     description: 'Team lead, all things coordination, bug bounty program, and grants.',
-    github: 'https://github.com/fredriksvantes',
-    twitter: 'https://x.com/fredriksvantes',
+    github: 'https://github.com/fredrik0x',
+    twitter: 'https://x.com/fredrik0x',
     image: '/images/fredrik.jpeg',
   },
   {
