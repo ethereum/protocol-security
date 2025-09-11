@@ -14,6 +14,13 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
+    name: 'Fredrik',
+    description: 'Team lead, all things coordination, bug bounty program, and grants.',
+    github: 'https://github.com/fredrik0x',
+    twitter: 'https://x.com/fredrik0x',
+    image: '/images/fredrik.jpeg',
+  },
+  {
     name: 'Tyler Holmes',
     description: 'Ethereum testnet bootstrapper, multiaddr libraries, kurtosis, and chaos fuzzing.',
     github: 'https://github.com/0xTylerHolmes',
@@ -44,22 +51,8 @@ const teamMembers: TeamMember[] = [
     image: '/images/bhargava.png',
   },
   {
-    name: 'Fredrik',
-    description: 'Team lead, all things coordination, bug bounty program, and grants.',
-    github: 'https://github.com/fredrik0x',
-    twitter: 'https://x.com/fredrik0x',
-    image: '/images/fredrik.jpeg',
-  },
-  {
-    name: 'David Theodore',
-    description: 'ZK security, automated fuzzing, Golang clients, validator safety, and holistic thinker.',
-    github: 'https://github.com/infosecual',
-    twitter: 'https://x.com/infosecual',
-    image: '/images/david.jpeg',
-  },
-  {
     name: 'Justin Traglia',
-    description: 'Manual code review, consensus layer specs/clients, MEV-boost stack, and KZG libraries.',
+    description: 'Manual code review, consensus layer specs/clients, and KZG libraries.',
     github: 'https://github.com/jtraglia',
     twitter: 'https://x.com/JustinTraglia',
     signal: 'https://signal.me/#eu/nFqTWX1iPknqfQa93CuYl6iLjGyKylI3gTPq__SeNTkhGd3w1TBFZ5cwoRH7hFzI',
