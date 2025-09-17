@@ -13,23 +13,32 @@ interface Competition {
 }
 
 const competitions: Competition[] = [
-  {
-    name: 'Attackathon | Pectra',
-    description: ' Competition targetting Pectra specific client code and specifications',
-    link: 'https://cantina.xyz/competitions/pectra',
-    pool: '2,000,000 USD',
-    startDate: '21 February 2025',
-    endDate: '21 March 2025',
-    platform: '/images/cantina.svg',
+    {
+        name: 'Audit Contest | Fusaka',
+        description: ' Competition targetting Pectra specific client code and specifications',
+        link: 'https://sherlock.xyz/ethereumfusakacontest',
+        pool: '2,000,000 USD',
+        startDate: '15 September 2025',
+        endDate: '13 October 2025',
+        platform: '/images/sherlock.jpeg',
+    },
+    {
+        name: 'Attackathon | Pectra',
+        description: ' Competition targetting Fusaka specific client code and specifications',
+        link: 'https://cantina.xyz/competitions/pectra',
+        pool: '2,000,000 USD',
+        startDate: '21 February 2025',
+        endDate: '21 March 2025',
+        platform: '/images/cantina.svg',
   },
   {
-    name: 'Attackathon | Ethereum Protocol',
-    description: ' Competition targetting the entire Ethereum protocol',
-    link: 'https://immunefi.com/audit-competition/ethereum-protocol-attackathon/information/',
-    pool: '1,500,000 USD',
-    startDate: '25 November 2024',
-    endDate: '20 January 2025',
-    platform: '/images/immunefi.png',
+        name: 'Attackathon | Ethereum Protocol',
+        description: ' Competition targetting the entire Ethereum protocol',
+        link: 'https://immunefi.com/audit-competition/ethereum-protocol-attackathon/information/',
+        pool: '1,500,000 USD',
+        startDate: '25 November 2024',
+        endDate: '20 January 2025',
+        platform: '/images/immunefi.png',
   }
 ];
 
