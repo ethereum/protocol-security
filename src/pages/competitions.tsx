@@ -15,7 +15,7 @@ interface Competition {
 const competitions: Competition[] = [
     {
         name: 'Audit Contest | Fusaka',
-        description: ' Competition targetting Pectra specific client code and specifications',
+        description: ' Competition targeting Fusaka specific client code and specifications',
         link: 'https://sherlock.xyz/ethereumfusakacontest',
         pool: '2,000,000 USD',
         startDate: '15 September 2025',
@@ -24,7 +24,7 @@ const competitions: Competition[] = [
     },
     {
         name: 'Attackathon | Pectra',
-        description: ' Competition targetting Fusaka specific client code and specifications',
+        description: ' Competition targeting Fusaka specific client code and specifications',
         link: 'https://cantina.xyz/competitions/pectra',
         pool: '2,000,000 USD',
         startDate: '21 February 2025',
@@ -33,7 +33,7 @@ const competitions: Competition[] = [
   },
   {
         name: 'Attackathon | Ethereum Protocol',
-        description: ' Competition targetting the entire Ethereum protocol',
+        description: ' Competition targeting the entire Ethereum protocol',
         link: 'https://immunefi.com/audit-competition/ethereum-protocol-attackathon/information/',
         pool: '1,500,000 USD',
         startDate: '25 November 2024',
