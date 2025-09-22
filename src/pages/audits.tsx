@@ -20,6 +20,21 @@ interface Audit {
 
 const audits: Audit[] = [
   {
+    name: 'KZG Libraries Audit 2025',
+    auditor: 'zkSecurity',
+    auditorUrl: 'https://www.zksecurity.xyz',
+    logo: '/images/zksec.png',
+    date: 'September 2025',
+    scope: 'Audit the KZG libaries for the Fusaka upgrade',
+    findings: [
+        {severity: 'high', count: 1},
+        {severity: 'medium', count: 2},
+        {severity: 'low', count: 7},
+        {severity: 'info', count: 9},
+    ],
+    pdfUrl: '/audits/2025_KZG_Audit_Report_zkSecurity.pdf',
+  },
+  {
     name: 'Pectra System Contracts Bytecode',
     auditor: 'Sigma Prime',
     auditorUrl: 'https://sigmaprime.io/',
@@ -97,6 +112,21 @@ const audits: Audit[] = [
     ],
     pdfUrl: '/audits/Pectra_System_Contracts_Bytecode_Audit_Report_Blackthorn.pdf',
   },
+  {
+    name: 'KZG Libraries Audit 2023',
+    auditor: 'Sigma Prime',
+    auditorUrl: 'https://sigmaprime.io/',
+    logo: '/images/sigp.png',
+    date: 'June 2023',
+    scope: 'Audit the KZG libaries for the Dencun upgrade',
+    findings: [
+        {severity: 'critical', count: 1},
+        {severity: 'high', count: 2},
+        {severity: 'low', count: 1},
+        {severity: 'info', count: 4},
+    ],
+    pdfUrl: '/audits/2023_KZG_Audit_Report_Sigma_Prime.pdf',
+  },
 ];
 
 export default function Audits() {
@@ -108,7 +138,7 @@ export default function Audits() {
           <div className="max-w-4xl mx-auto">
             <div className="grid gap-8">
               {audits.map((audit, index) => (
-                <div 
+                <div
                   key={index}
                   className="group relative p-6 rounded-lg border border-border/40 bg-secondary/20 hover:bg-secondary/40 transition-all"
                 >
@@ -124,19 +154,19 @@ export default function Audits() {
                         </div>
                       )}
                     </div>
-                    
+
                     <div className="w-px self-stretch bg-border/60 mx-4"></div>
-                    
+
                     <div className="flex-1">
                       <h2 className="text-2xl font-semibold text-foreground group-hover:text-red-500 transition-colors mb-2">
                         {audit.name}
                       </h2>
-                      
+
                       <h3 className="text-xl text-muted-foreground mb-4">
                         {audit.auditorUrl ? (
-                          <a 
-                            href={audit.auditorUrl} 
-                            target="_blank" 
+                          <a
+                            href={audit.auditorUrl}
+                            target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center hover:text-red-500 hover:underline transition-colors"
                           >
@@ -147,15 +177,15 @@ export default function Audits() {
                           audit.auditor
                         )}
                       </h3>
-                      
+
                       <p className="text-muted-foreground mb-6">
                         {audit.scope}
                       </p>
-                      
+
                       <div className="flex flex-wrap gap-2 mb-4">
                         {audit.findings.map((finding, idx) => (
                           finding.count > 0 && (
-                            <span 
+                            <span
                               key={idx}
                               className={`px-3 py-1 text-sm font-medium rounded-full ${
                                 finding.severity === 'critical' ? 'bg-red-900 text-red-100 dark:bg-red-900/50 dark:text-red-300' :
@@ -170,17 +200,17 @@ export default function Audits() {
                           )
                         ))}
                       </div>
-                      
+
                       <div className="flex items-center gap-2 mb-4 text-sm text-muted-foreground">
                         <Calendar size={16} />
                         <span>Completed: {audit.date}</span>
                       </div>
-                      
+
                       {audit.pdfUrl && (
-                        <a 
+                        <a
                           href={`${import.meta.env.BASE_URL}${audit.pdfUrl.replace('/', '')}`}
-                          target="_blank" 
-                          rel="noopener noreferrer" 
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="inline-flex items-center text-red-500 hover:text-red-600 hover:underline"
                         >
                           <FileText size={16} className="mr-2" />
@@ -198,4 +228,4 @@ export default function Audits() {
       <Footer />
     </div>
   );
-} 
+}
