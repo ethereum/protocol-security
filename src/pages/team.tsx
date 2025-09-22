@@ -26,7 +26,7 @@ const teamMembers: TeamMember[] = [
     github: 'https://github.com/gitToki',
     twitter: 'https://x.com/Toki_Ell',
     signal: 'https://signal.me/#eu/DiiXpJaB7GyhPVR1q46VtO9OI_HQsfvAo5QNumfmDg_jqU3Z9JBPOKJMooGTLzQ_',
-    image: '/images/yassine.jpeg',
+    image: '/images/yassine.png',
   },
   {
     name: 'Tyler Holmes',
