@@ -21,6 +21,14 @@ const teamMembers: TeamMember[] = [
     image: '/images/fredrik.jpeg',
   },
   {
+    name: 'Nikos Baxevanis',
+    description: 'Protocol Security researcher focusing on fuzzing and robustness of the Ethereum protocol.',
+    github: 'https://github.com/moodmosaic',
+    twitter: '',
+    signal: '',
+    image: '/images/nikos.jpg',
+  },  
+  {
     name: 'Yassine Ferhane',
     description: 'Manual code review and fuzzing for consensus/execution layer clients.',
     github: 'https://github.com/gitToki',
