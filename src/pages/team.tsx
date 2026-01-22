@@ -14,11 +14,47 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
+    name: 'Andrés Láinez',
+    description: 'Execution layer clients and zkVMs.',
+    github: 'https://github.com/nethoxa',
+    twitter: 'https://x.com/nethoxa',
+    website: 'https://nethoxa.github.io/',
+    image: '/images/andres.jpeg',
+  },
+  {
+    name: 'Antoine James',
+    description: 'Rust security, execution layer and ZK enthusiast.',
+    github: 'https://github.com/0xMushow',
+    twitter: 'https://x.com/0xMushow',
+    image: '/images/antoine.jpeg',
+  },
+  {
+    name: 'Bhargava Shastry',
+    description: 'Solidity compilers, fuzzing everything, and networking libraries.',
+    github: 'https://github.com/bshastry',
+    twitter: 'https://x.com/ibags',
+    image: '/images/bhargava.png',
+  },
+  {
     name: 'Fredrik',
     description: 'Team lead, all things coordination, bug bounty program, and grants.',
     github: 'https://github.com/fredrik0x',
     twitter: 'https://x.com/fredrik0x',
     image: '/images/fredrik.jpeg',
+  },
+  {
+    name: 'Huaifeng Zhang',
+    description: 'LLM security tooling and research.',
+    github: 'https://github.com/jzh18',
+    image: '/images/huaifeng.png',
+  },
+  {
+    name: 'Justin Traglia',
+    description: 'Manual code review, consensus layer specs/clients, and KZG libraries.',
+    github: 'https://github.com/jtraglia',
+    twitter: 'https://x.com/JustinTraglia',
+    signal: 'https://signal.me/#eu/nFqTWX1iPknqfQa93CuYl6iLjGyKylI3gTPq__SeNTkhGd3w1TBFZ5cwoRH7hFzI',
+    image: '/images/justin.png',
   },
   {
     name: 'Nikos Baxevanis',
@@ -27,14 +63,6 @@ const teamMembers: TeamMember[] = [
     twitter: 'https://x.com/nikosbaxevanis',
     signal: '',
     image: '/images/nikos.jpg',
-  },  
-  {
-    name: 'Yassine Ferhane',
-    description: 'Manual code review and fuzzing for consensus/execution layer clients.',
-    github: 'https://github.com/gitToki',
-    twitter: 'https://x.com/Toki_Ell',
-    signal: 'https://signal.me/#eu/DiiXpJaB7GyhPVR1q46VtO9OI_HQsfvAo5QNumfmDg_jqU3Z9JBPOKJMooGTLzQ_',
-    image: '/images/yassine.png',
   },
   {
     name: 'Tyler Holmes',
@@ -45,34 +73,12 @@ const teamMembers: TeamMember[] = [
     image: '/images/tyler.jpeg',
   },
   {
-    name: 'Antoine James',
-    description: 'Rust security, execution layer and ZK enthusiast.',
-    github: 'https://github.com/0xMushow',
-    twitter: 'https://x.com/0xMushow',
-    image: '/images/antoine.jpeg',
-  },
-  {
-    name: 'Andrés Láinez',
-    description: 'Execution layer clients and zkVMs.',
-    github: 'https://github.com/nethoxa',
-    twitter: 'https://x.com/nethoxa',
-    website: 'https://nethoxa.github.io/',
-    image: '/images/andres.jpeg',
-  },
-  {
-    name: 'Bhargava Shastry',
-    description: 'Solidity compilers, fuzzing everything, and networking libraries.',
-    github: 'https://github.com/bshastry',
-    twitter: 'https://x.com/ibags',
-    image: '/images/bhargava.png',
-  },
-  {
-    name: 'Justin Traglia',
-    description: 'Manual code review, consensus layer specs/clients, and KZG libraries.',
-    github: 'https://github.com/jtraglia',
-    twitter: 'https://x.com/JustinTraglia',
-    signal: 'https://signal.me/#eu/nFqTWX1iPknqfQa93CuYl6iLjGyKylI3gTPq__SeNTkhGd3w1TBFZ5cwoRH7hFzI',
-    image: '/images/justin.png',
+    name: 'Yassine Ferhane',
+    description: 'Manual code review and fuzzing for consensus/execution layer clients.',
+    github: 'https://github.com/gitToki',
+    twitter: 'https://x.com/Toki_Ell',
+    signal: 'https://signal.me/#eu/DiiXpJaB7GyhPVR1q46VtO9OI_HQsfvAo5QNumfmDg_jqU3Z9JBPOKJMooGTLzQ_',
+    image: '/images/yassine.png',
   }
 ];
 
