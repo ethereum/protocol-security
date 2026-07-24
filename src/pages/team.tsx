@@ -14,14 +14,6 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
-    name: 'Andrés Láinez',
-    description: 'Execution layer clients and zkVMs.',
-    github: 'https://github.com/nethoxa',
-    twitter: 'https://x.com/nethoxa',
-    website: 'https://nethoxa.github.io/',
-    image: '/images/andres.jpeg',
-  },
-  {
     name: 'Antoine James',
     description: 'Rust security, execution layer and ZK enthusiast.',
     github: 'https://github.com/0xMushow',
@@ -36,25 +28,10 @@ const teamMembers: TeamMember[] = [
     image: '/images/bhargava.png',
   },
   {
-    name: 'Fredrik',
-    description: 'Team lead, all things coordination, bug bounty program, and grants.',
-    github: 'https://github.com/fredrik0x',
-    twitter: 'https://x.com/fredrik0x',
-    image: '/images/fredrik.jpeg',
-  },
-  {
     name: 'Huaifeng Zhang',
     description: 'LLM security tooling and research.',
     github: 'https://github.com/jzh18',
     image: '/images/huaifeng.png',
-  },
-  {
-    name: 'Justin Traglia',
-    description: 'Manual code review, consensus layer specs/clients, and KZG libraries.',
-    github: 'https://github.com/jtraglia',
-    twitter: 'https://x.com/JustinTraglia',
-    signal: 'https://signal.me/#eu/nFqTWX1iPknqfQa93CuYl6iLjGyKylI3gTPq__SeNTkhGd3w1TBFZ5cwoRH7hFzI',
-    image: '/images/justin.png',
   },
   {
     name: 'Nikos Baxevanis',
@@ -63,14 +40,6 @@ const teamMembers: TeamMember[] = [
     twitter: 'https://x.com/nikosbaxevanis',
     signal: '',
     image: '/images/nikos.jpg',
-  },
-  {
-    name: 'Tyler Holmes',
-    description: 'Ethereum testnet bootstrapper, multiaddr libraries, kurtosis, and chaos fuzzing.',
-    github: 'https://github.com/0xTylerHolmes',
-    twitter: 'https://x.com/0xTylerHolmes',
-    signal: 'https://signal.me/#eu/qsVdOw5jn9jVo71b5UScjn7ZqaLOv84eceT3u2_Ic5JmoEt8x35K-bSXjdnGs5zs',
-    image: '/images/tyler.jpeg',
   },
   {
     name: 'Yassine Ferhane',
