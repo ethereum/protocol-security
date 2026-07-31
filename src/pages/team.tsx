@@ -22,7 +22,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: 'Bhargava Shastry',
-    description: 'Solidity compilers, fuzzing everything, and networking libraries.',
+    description: 'Execution-client differential fuzzing, hard-fork readiness testing, bug-bounty triage, and AI-assisted security pipelines.',
     github: 'https://github.com/bshastry',
     twitter: 'https://x.com/ibags',
     image: '/images/bhargava.png',
