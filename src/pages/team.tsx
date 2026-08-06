@@ -34,6 +34,12 @@ const teamMembers: TeamMember[] = [
     image: '/images/huaifeng.png',
   },
   {
+    name: 'Marius van der Wijden',
+    description: 'Member of the go-ethereum team, fuzzing, coordination, focused on the execution layer.',
+    github: 'https://github.com/MariusVanDerWijden',
+    image: '/images/marius.jpg',
+  },
+  {
     name: 'Nikos Baxevanis',
     description: 'Protocol Security researcher focusing on fuzzing and robustness of the Ethereum protocol.',
     github: 'https://github.com/moodmosaic',
