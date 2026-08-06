@@ -41,7 +41,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: 'Nikos Baxevanis',
-    description: 'Protocol Security researcher focusing on fuzzing and robustness of the Ethereum protocol.',
+    description: 'AI-assisted security research, fuzzing, property-based testing, and team coordination.',
     github: 'https://github.com/moodmosaic',
     twitter: 'https://x.com/nikosbaxevanis',
     signal: '',
