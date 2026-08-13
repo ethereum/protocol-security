@@ -20,6 +20,18 @@ interface Audit {
 
 const audits: Audit[] = [
   {
+    name: 'EIP 8282',
+    auditor: 'Dedaub',
+    auditorUrl: 'https://dedaub.com/',
+    logo: '/images/dedaub.png',
+    date: 'July 2026',
+    scope: 'Audit the EIP 8282 implementation',
+    findings: [
+        { severity: 'info', count: 3 },
+    ],
+    pdfUrl: '/audits/EIP_8282_Audit_Report_Dedaub.pdf',
+  },
+  {
     name: 'KZG Libraries Audit 2025',
     auditor: 'zkSecurity',
     auditorUrl: 'https://www.zksecurity.xyz',
