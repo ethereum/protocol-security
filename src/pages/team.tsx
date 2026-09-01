@@ -48,6 +48,13 @@ const teamMembers: TeamMember[] = [
     image: '/images/nikos.jpg',
   },
   {
+    name: 'Radu Bahmata',
+    description: 'AI-assisted security research, AI processes automation, fuzzing',
+    github: 'https://github.com/radubahmata',
+    twitter: 'https://x.com/bowtiedradone',
+    image: '/images/radu.jpg',
+  },
+  {
     name: 'Yassine Ferhane',
     description: 'Manual code review and fuzzing for consensus/execution layer clients.',
     github: 'https://github.com/gitToki',
