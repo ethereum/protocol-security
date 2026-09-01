@@ -28,12 +28,6 @@ const teamMembers: TeamMember[] = [
     image: '/images/bhargava.png',
   },
   {
-    name: 'Huaifeng Zhang',
-    description: 'LLM security tooling and research.',
-    github: 'https://github.com/jzh18',
-    image: '/images/huaifeng.png',
-  },
-  {
     name: 'Marius van der Wijden',
     description: 'Member of the go-ethereum team, fuzzing, coordination, focused on the execution layer.',
     github: 'https://github.com/MariusVanDerWijden',
