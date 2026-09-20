@@ -16,6 +16,11 @@ interface InternalPost {
 
 const externalLinks = [
   {
+    title: 'The triage is the product: running AI agents against Ethereum's protocol code',
+    date: '2026-07-09',
+    link: 'https://blog.ethereum.org/2026/07/09/triage-is-the-product'
+  },
+  {
     title: 'ETH Rangers Program',
     date: '2024-12-02',
     link: 'https://blog.ethereum.org/2024/12/02/ethrangers-public-goods'
