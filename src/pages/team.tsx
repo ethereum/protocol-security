@@ -43,7 +43,7 @@ const teamMembers: TeamMember[] = [
   },
   {
     name: 'Radu Bahmata',
-    description: 'AI-assisted security research, AI processes automation, fuzzing',
+    description: 'AI-assisted security research, AI processes automation, fuzzing.',
     github: 'https://github.com/radubahmata',
     twitter: 'https://x.com/bowtiedradone',
     image: '/images/radu.jpg',
