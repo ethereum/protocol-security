@@ -49,6 +49,13 @@ const teamMembers: TeamMember[] = [
     image: '/images/radu.jpg',
   },
   {
+    name: 'Simone Orsi',
+    description: 'AI-assisted security research, benchmarking, tooling, and workflow automation.',
+    github: 'https://github.com/orsissimo',
+    twitter: 'https://x.com/orsissimo',
+    image: '/images/simone.png',
+  },
+  {
     name: 'Yassine Ferhane',
     description: 'Manual code review and fuzzing for consensus/execution layer clients.',
     github: 'https://github.com/gitToki',
