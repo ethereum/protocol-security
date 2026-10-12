@@ -52,7 +52,7 @@ const teamMembers: TeamMember[] = [
     name: 'Shota Ehrlich',
     description: 'Manual and  AI-assisted security research and fuzzing',
     github: 'https://github.com/shotes',
-    image: '/images/shota.jpg'
+    image: '/images/shota.jpg',
   },
   {
     name: 'Simone Orsi',
