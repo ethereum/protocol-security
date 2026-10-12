@@ -49,6 +49,12 @@ const teamMembers: TeamMember[] = [
     image: '/images/radu.jpg',
   },
   {
+    name: 'Shota Ehrlich',
+    description: 'Manual and  AI-assisted security research and fuzzing',
+    github: 'https://github.com/shotes',
+    image: '/images/shota.jpg'
+  },
+  {
     name: 'Simone Orsi',
     description: 'AI-assisted security research, benchmarking, tooling, and workflow automation.',
     github: 'https://github.com/orsissimo',
