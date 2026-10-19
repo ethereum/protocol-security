@@ -34,6 +34,13 @@ const teamMembers: TeamMember[] = [
     image: '/images/marius.jpg',
   },
   {
+    name: 'Matus Kysel',
+    description: 'AI-assisted security research, fuzzing, and execution layer client security.',
+    github: 'https://github.com/MatusKysel',
+    twitter: 'https://x.com/MatusK279',
+    image: '/images/matus.jpg',
+  },
+  {
     name: 'Nikos Baxevanis',
     description: 'AI-assisted security research, fuzzing, property-based testing, and team coordination.',
     github: 'https://github.com/moodmosaic',
