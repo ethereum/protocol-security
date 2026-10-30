@@ -15,9 +15,10 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     name: 'Antoine James',
-    description: 'Rust security, execution layer and ZK enthusiast.',
+    description: 'Manual & AI Security Research. Lead of the Bug Bounty Program.',
     github: 'https://github.com/0xMushow',
-    twitter: 'https://x.com/0xMushow',
+    twitter: 'https://x.com/MushowUK',
+    website: 'https://mushow.uk',
     image: '/images/antoine.jpeg',
   },
   {

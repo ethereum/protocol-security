@@ -31,10 +31,30 @@ export default function Index() {
             <section id="contact" className="pt-8 border-t border-border/40">
               <h2 className="text-2xl font-semibold mb-6 text-foreground">Contact</h2>
               <p className="text-lg mb-4 text-muted-foreground">
-                For security-related inquiries or to report vulnerabilities, please contact us at:
+                To report a vulnerability, please use the{' '}
+                <a
+                  href="https://ethereum.org/bug-bounty/#in-scope"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-500 hover:text-red-700 transition-colors font-medium"
+                >
+                  Bug Bounty Program
+                </a>{' '}
+                and review its scope before submitting.
               </p>
-              <a 
-                href="mailto:security@ethereum.org" 
+              <a
+                href="https://bbp-form.ethereum.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-5 py-2.5 rounded-md bg-red-500/10 hover:bg-red-500/20 border border-red-500/40 text-red-500 font-medium transition-colors"
+              >
+                Submit a Bug
+              </a>
+              <p className="text-lg mt-8 mb-4 text-muted-foreground">
+                For other security-related inquiries, contact us at:
+              </p>
+              <a
+                href="mailto:security@ethereum.org"
                 className="text-xl font-medium text-red-500 hover:underline"
               >
                 security@ethereum.org
